@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>SciFacts</title>
+</head>
+<body>
+    
+  <section id="top-menu">
+<div class="menu-btn">
+      <div class="bars" onclick="toggleSidebar()">
+            ☰
+            </div>
+            
+            <h2 class="logo">SciFacts</h2>
+        </div>
+</section>
+
+
+    <div class="side-bar sidebar-container">
+
+        <header>
+
+            <div class="close-btn" onclick="closeSidebar()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <img src="/media/main.JPG" alt="">
+            <h2>SciFacts</h2>
+        </header>
+
+       
+        <div class="menu">
+            <div onclick="closeSidebar()" class="item"><a href="#hero"><i class="fas fa-home"></i>Home</a></div>
+            <div onclick="closeSidebar()" class="item"><a class="sub-btn" id="subBtn" href="video.html"><i class="fas  fa-video"></i>Videos
+            <i class="fas fa-angle-right dropdown"></i>            
+            </a>
+          </div>
+
+            <div onclick="closeSidebar()" class="item"><a  id="subTopic"  href="writing.html"><i class="fas fa-th"></i>Topics (PDFs)
+                <i class="fas fa-angle-right dropdown"></i>  
+            </a>
+        </div>
+
+            <div onclick="closeSidebar()" class="item"><a href="#about"><i class="fas fa-cog"></i>About</a></div>
+            <div onclick="closeSidebar()" class="item"><a href="#contact"><i class="fas fa-info-circle"></i>Contact</a></div>
+        </div>
+    </div>
+
+  
+
+      <section class="hero" id="hero" >
+      <div class="img-container">
+        <img class="image" src="/media/banner.JPG" alt="" />
+      </div>
+    </section>
+
+     <section class="description">
+      <h2  >هل تعلم؟</h2>
+      <p>
+        على مدى قرون، قدم العلماء والمفكرون المسلمون مساهمات رائدة في مجالات
+        مختلفة، من الرياضيات وعلم الفلك إلى الطب والفيزياء. اليوم، سوف نتعمق في
+        بعض المفاهيم والاكتشافات العلمية الرائعة التي أشار إليها القرآن. خلال
+        هذا العرض، سوف نستكشف الطرق التي يشجعنا بها القرآن على طلب المعرفة،
+        ومراقبة العالم الطبيعي، والتأمل في أسرار الخلق.
+      </p>
+
+      <h2 > Did You Know?</h2>
+      <p>
+        For centuries, muslim scientists and thinkers have made
+        groundbreaking contributions to various fields, from mathematics and
+        astronomy to medicine and physics. Today, we will delve into some of the
+        remarkable scientific concepts and discoveries that are referenced in
+        the Quran. Throughout this presentation, we will explore the ways which
+        the Quran encourages us to seek knowledge, observe the natural world,
+        and to ponder the mysteries of creation.
+      </p>
+    </section>
+
+    <div id="about" >
+      <h2>About Us</h2>
+
+      <p>Welcome to SciFacts, a platform dedicated to exploring the fascinating intersection
+         of science and Islam. Our mission is to showcase the rich scientific heritage of Islamic civilization
+         and to highlight the remarkable connections between modern scientific discoveries and the 
+        teachings of the Quran. </p>
+        </div>
+
+         <section id="founder"  id="about" >
+        <h2>Our Founder</h2>
+        <div class="founder">
+          <div class="founder-image" >
+            <img src="media/main.JPG" alt="">
+          </div>
+
+          <div class="founder-text" >
+            <p class="paragraph"><strong>Ustaz Abubakre Akanji</strong> is the founder and driving force behind SciFacts.
+            With a passion for science, knowledge, Islam and education, <strong>Ustaz Abubakre Akanji</strong>
+          aims to inspire a new generation of Muslims to explore the natural world and to see the beauty and
+          wonder of creation. <strong>Ustaz Abubakre Akanji</strong> holds a degree in Arabic from 
+          <strong>Arabic and Islamic Training Centre, Agege, Lagos, Nigeria</strong> and also at the 
+        <strong>Azhar University Cairo, Egypt.</strong> and has years of experience in Arabic Learning.</p>
+          </div>          
+        </div>
+    </section>
+
+
+       <section id="video-gallery">
+      <p class="gallery-text">Our video gallery features a wide range of topics, from the natural world to the latest scientific 
+        breakthroughs.</p>
+
+        <p class="gallery-text">Learn from experts and scholars in the field of science and Islam through our video library.</p>
+
+        <button><a href="video.html">Click to explore videos now!!!</a></button>
+    </section>
+
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+        <p>We would love to hear from you!  Whether you have questions, feedback, please don't hesitate
+          to reach out. we're committed to providing you with the best possible experience 👍
+        </p>
+      
+      <div class="social">
+        <div>
+          <h3>Get In Touch</h3>
+          <div class="icons">
+            <a href="mailto:akanjibello9@gmail.com"><i class="fa-solid fa-envelope"></i>Email: akanjibello9@gmail.com</a>
+            <a href="https://wa.me/201102904513"><i class="fa-brands fa-whatsapp"></i>WhatsApp: +20 110 290 4513</a>
+            </div>
+          
+        </div>
+        <div>
+          <h3>Follow Us On</h3>
+
+          <div class="icons">
+          <a href="https://www.facebook.com/share/18L7W7nPog/?mibextid=LQQJ4d" target="_blank" ><i class="fa-brands fa-facebook"></i>Facebook:  Ustaz Abubakre Akanji</a>
+          
+          <a href="https://www.instagram.com/ustaz_abubakre_akanji?igsh=MTBudzA0a282eTJjYg==" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram: Ustaz Abubakre Akanji</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    
+    
+
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+      AOS.init();
+    </script>
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script src="index.js">
+
+</script>
+
+
+</body>
+</html>
+

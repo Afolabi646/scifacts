@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body id="video">
+
+  <section id="top-menu">
+<div class="menu-btn">
+      <div class="bars" onclick="toggleSidebar()">
+            ☰
+            </div>
+            
+            <h2 class="logo">SciFacts</h2>
+        </div>
+</section>
+
+
+    <div class="side-bar sidebar-container">
+
+        <header>
+
+            <div class="close-btn" onclick="closeSidebar()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <img src="/media/main.JPG" alt="">
+            <h2>SciFacts</h2>
+        </header>
+
+       
+        <div class="menu">
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+            <div onclick="closeSidebar()" class="item"><a class="sub-btn" id="subBtn" href="video.html"><i class="fas  fa-video"></i>Videos
+            <i class="fas fa-angle-right dropdown"></i>            
+            </a>
+          </div>
+
+            <div onclick="closeSidebar()" class="item"><a  id="subTopic"  href="writing.html"><i class="fas fa-th"></i>Topics (PDFs)
+                <i class="fas fa-angle-right dropdown"></i>  
+            </a>
+        </div>
+
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-cog"></i>About</a></div>
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-info-circle"></i>Contact</a></div>
+        </div>
+    </div>
+
+<section class="video-section">
+    <div class="big-video" id="bigVideo">
+        <video autoplay controls src="" id="mainVideo"></video>
+        <h3 id="titleOne"></h3>
+        <h4 id="titleTwo"></h4>
+    </div>
+    
+<div class="video-wrapper">
+
+      <div class="video-container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+            <video src="media/Alfa Abu video1.mp4"  class="small-vid"  alt=""></video>
+        <h3>بصمات الأصابع في القرآن الكريم</h3>
+        <h4>Finger Prints in the Holy Quran</h4>
+        </div>
+        
+            
+    <div class="video-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        <video src="media/Alfa Abu video2.mp4"  class="small-vid"  alt=""></video>
+        <h3>أصل الحديد</h3>
+        <h4>Origin of Iron</h4>
+    </div>
+
+
+    <div class="video-container" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
+        <video src="media/Alfa Abu video3.mp4" class="small-vid"   alt=""></video>
+        <h3>تقليل سطح الأرض من الحدود الخارجية</h3>
+        <h4>The reduction of the earth surface from the outline borders</h4>
+    </div>
+
+
+     <div class="video-container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+        <video src="media/Alfa Abu video4.mp4"  class="small-vid"  alt=""></video>
+        <h3>فوائد أكل التمر في القرآن الكريم</h3>
+        <h4>Benefits of eating dates in the holy Quran</h4>
+    </div>
+
+    <div class="video-container" data-aos="fade-down" data-aos-delay="100" data-aos-duration="2000">
+        <video src="media/Alfa Abu video5.mp4"  class="small-vid"  alt=""></video>
+        <h3>ماذا يفعل التفكير، الدماغ أو القلب؟</h3>
+        <h4>What does the thinking, brain or heart?</h4>
+    </div>
+
+    <div class="video-container" >
+        <video src="media/Alfa Abu video6.mp4"  class="small-vid"  alt=""></video>
+        <h3>طفاية حريق صوتية</h3>
+        <h4>Sound fire extinguisher</h4>
+    </div>
+
+    <div class="video-container">
+        <video src="media/Alfa Abu video7.mp4"  class="small-vid"  alt=""></video>
+        <h3>من أين يأتي الماء، الأرض أم السماء؟</h3>
+      <h4>Where did water come from, earth or sky?</h4>
+    </div>
+
+    <div class="video-container">
+        <video src="media/Alfa Abu video8.mp4"  class="small-vid"  alt=""></video>
+        <h3>تخطيط كهربية الدماغ (EEG)</h3>
+      <h4>Electroencephalography (EEG)</h4>
+    </div>
+
+    <div class="video-container">
+        <video src="media/Alfa Abu video9.mp4"  class="small-vid"  alt=""></video>
+        <h3>بئر الجحيم الغامض</h3>
+      <h4>The Mysterious Well of Hell</h4>
+    </div>
+
+    <div class="video-container">
+        <video src="media/Alfa Abu video10.mp4"  class="small-vid"  alt=""></video>
+       <h3>الإعصار الناري في القرآن الكريم</h3>
+       <h4>Fire Tornado in the Holy Quran</h4>
+    </div>
+
+    <div class="video-container" >
+        <video src="media/Alfa Abu video11.mp4"  class="small-vid"  alt=""></video>
+       <h3>الختان في الإسلام</h3>
+       <h4>Circumcision in Islam</h4>
+    </div>
+
+    <div class="video-container" >
+        <video src="media/Alfa Abu video12.mp4"  class="small-vid"  alt=""></video>
+       <h3>مثلث برمودا</h3>
+       <h4>The Bermuda Triangle</h4>
+    </div>
+
+    <div class="video-container" >
+        <video src="media/Alfa Abu video13.mp4"  class="small-vid"  alt=""></video>
+       <h3>حركة الجبال</h3>
+       <h4>The Movement of Mountains</h4>
+    </div>
+
+    </div>
+
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+      AOS.init();
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js">
+
+    </script>
+  </body>
+</html>

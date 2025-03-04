@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Topics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    
+      <section id="top-menu">
+<div class="menu-btn">
+      <div class="bars" onclick="toggleSidebar()">
+            ☰
+            </div>
+            
+            <h2 class="logo">SciFacts</h2>
+        </div>
+</section>
+
+
+    <div class="side-bar sidebar-container">
+
+        <header>
+
+            <div class="close-btn" onclick="closeSidebar()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <img src="/media/main.JPG" alt="">
+            <h2>SciFacts</h2>
+        </header>
+
+       
+        <div class="menu">
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-home"></i>Home</a></div>
+            <div onclick="closeSidebar()" class="item"><a class="sub-btn" id="subBtn" href="video.html"><i class="fas  fa-video"></i>Videos
+            <i class="fas fa-angle-right dropdown"></i>            
+            </a>
+          </div>
+
+            <div onclick="closeSidebar()" class="item"><a  id="subTopic"  href="writing.html"><i class="fas fa-th"></i>Topics (PDFs)
+                <i class="fas fa-angle-right dropdown"></i>  
+            </a>
+        </div>
+
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-cog"></i>About</a></div>
+            <div onclick="closeSidebar()" class="item"><a href="index.html"><i class="fas fa-info-circle"></i>Contact</a></div>
+        </div>
+    </div>
+    
+    
+    <iframe  id="frame"  src="" frameborder="0"></iframe>
+    
+
+    <div class="writing" >
+      <h1  id="meet">Table Of Contents</h1>
+
+      <div id="myTopics">
+        <a href="" class="topic">Finger Prints in the Holy Quran</a>
+        <a href="" class="topic">Origin of Iron</a>
+        <a href="" class="topic">Benefits of eating dates in the holy Quran</a>
+        <a href="" class="topic">Sound fire extinguisher</a>
+        <a href="" class="topic">The Bermuda Triangle</a>
+               
+      </div>
+      
+    </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+      AOS.init();
+    </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js">
+
+    </script>
+
+
+    <script >
+      const topic = document.getElementsByClassName("topic");
+      const frame = document.getElementById("frame");
+      
+     
+
+           topic[0].onclick = function (e){
+              e.preventDefault();
+              frame.style.display = "block";
+              frame.src = "media/print.pdf";
+            };
+
+             topic[1].onclick = function (e){
+              e.preventDefault();
+              frame.style.display = "block";
+              frame.src = "media/iron.pdf";
+            };
+
+            
+            topic[2].onclick = function (e){
+              e.preventDefault();
+              frame.style.display = "block";
+              frame.src = "media/dates.pdf";
+            };
+
+            
+             topic[3].onclick = function (e){
+              e.preventDefault();
+              frame.style.display = "block";
+              frame.src = "media/sound.pdf";
+            };
+
+            topic[4].onclick = function (e){
+              e.preventDefault();
+              frame.style.display = "block";
+              frame.src = "media/bermuda.pdf";
+            };
+
+           
+    </script>
+  </body>
+</html>
